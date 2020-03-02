@@ -1,0 +1,35 @@
+Metropolis : Accept if DelE <_ or equal to 0
+            :otherwise accept with exp(-DelE/kT)
+
+
+deltaE = -1()
+
+
+Want total enegry, cheat for this is to just use two nn, maybe up and left,
+moving across full thing accounts for all points
+
+2J diff in delta E
+
+DelE = -2J(Si)[s2 + s3 + s4 + s5]
+
+
+for kawasaki:
+  - want to ranodmly select two spins
+  - find indices of their NN
+  - compare this to the actula lattice sites themselves
+  - Then move on to sending each to their own delE calculation
+  - if they are NN of one another, take off -J(si*sj) from DelE at end
+  - this gives final value which we can evaluate
+
+magnetisation:
+  - <m> = sum(m(mu))/n
+  - m = M/N = sum(s_i)/N
+  - <m^2> = sum(m^2)/n
+  - <m>^2 = (sum(m)n)^2
+
+
+- 10000 sweeps total for each temp
+- n^2 attempted flips per sweep
+- start from T = 1
+- mag is sum then absolute
+-
